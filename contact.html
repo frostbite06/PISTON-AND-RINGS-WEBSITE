@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Us</title>
+    <!-- bootstrap -->
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <!-- owl carousel  -->
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.carousel.min.css" />
+    <link rel="stylesheet" href="/node_modules/owl.carousel/dist/assets/owl.theme.default.min.css">
+    <link rel="stylesheet" href="/styles/styles.css">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport"
+        content="width=device-width, initial-scale=1, minimum-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Contact Us</title>
+    <link href="css/styleContact.css" rel="stylesheet" type="text/css" />
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"
+        crossorigin="anonymous">
+</head>
+
+
+<body>
+
+    <div class="wrapper">
+
+
+
+        <nav style="margin-bottom: 3%;">
+            <input type="checkbox" class="toggler" onclick="myFunction()" checked>
+            <div class="hamburger">
+                <div></div>
+            </div>
+
+            <img src="/artclips/logo.png.png" alt="" id="logo">
+            <h2>Piston and Rings Enterprises</h2>
+            <div class="menu">
+                <div>
+                    <div>
+                        <ul>
+                            <li><a href="/index.html">Home</a></li>
+                            <li><a href="/About.html">About</a></li>
+                            <li><a href="/contact.html">Contact</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+
+        </nav>
+
+        <div class="topnav">
+
+            <div id="myLinks">
+                <a href="/index.html">Home</a>
+                <a href="/About.html">About</a>
+                <a href="/contact.html">Contact</a>
+            </div>
+
+        </div>
+
+        
+
+
+        <div style="margin-top: 1%">
+            <div class="contact-wrap" >
+                <div class="contact-in">
+                    <h1>Contact Info</h1>
+                    <DIV class="contact-background">
+                        <h2><i class="fa fa-phone" aria-hidden="true"></i> Phone</h2>
+                        <p>(+63) 917-514-8077</p>
+                        <h2><i class="fa fa-envelope" aria-hidden="true"></i> Email</h2>
+                        <p>piston.rings@hotmail.com</p>
+                        <h2><i class="fa fa-map-marker" aria-hidden="true"></i> Address</h2>
+                        <p>Binan City, Phillippines</p>
+                        <ul>
+                            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-google" aria-hidden="true"></i></a></li>
+                            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+                        </ul>
+                    </DIV>
+
+                </div>
+                <div class="contact-in">
+                    <h1>Send a Message</h1>
+                    <form>
+                        <input type="text" placeholder="Full Name" class="contact-in-input" id="contactName">
+                        <input type="text" placeholder="Email" class="contact-in-input" id="email">
+                        <input type="text" placeholder="Subject" class="contact-in-input" id="subject">
+                        <textarea placeholder="Message" class="contact-in-textarea"></textarea>
+                        <input type="submit" value="SUBMIT" class="contact-in-btn" onClick="onSendButtonClick()">
+                    </form>
+                </div>
+                <div class="contact-in">
+                    <iframe
+                        src="https://maps.google.com/maps?q=piston%20and%20rings%20philippines&t=&z=13&ie=UTF8&iwloc=&output=embed"
+                        width="100%" height="auto" frameborder="0" style="border:0;" allowfullscreen="true"
+                        scrolling="yes" aria-hidden="false" tabindex="0"></iframe>
+                </div>
+            </div>
+        </div>
+
+
+
+
+
+
+
+        <footer style="padding: 2%; background-color: rgb(24, 24, 88);">
+            <h3 style="color:aliceblue; text-align: center; font-size: small;">Piston & Rings 2021</h3>
+        </footer>
+
+
+    </div>
+
+    <script>
+        function myFunction() {
+            var x = document.getElementById("myLinks");
+            if (x.style.display === "block") {
+                x.style.display = "none";
+            } else {
+                x.style.display = "block";
+            }
+        }
+
+        function onSendButtonClick(){
+            var x = document.getElementById("contactName").value;
+            var y = document.getElementById("email").value;
+            var z = document.getElementById("subject").value;
+
+            console.log(x + " " + y + " " + z);
+            
+        }
+
+    </script>
+
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/owl.carousel/dist/owl.carousel.min.js"></script>
+    <script src="/node_modules/@popperjs/core/dist/umd/popper.min.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.js"></script>
+    <script src="js/script.js"></script>
+
+
+</body>
+
+</html>
